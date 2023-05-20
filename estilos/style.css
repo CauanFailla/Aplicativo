@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor1: #071F66;
+    --cor2: #6188FF;
+    --cor3: #0D37C0;
+    --cor4: #0B1533;
+    --cor5: #0D37C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+    height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.teste, .suporte {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #1242e0,#0a2986);
+    color: white;
+    padding: 20px 0px;
+}
+
+header h1 {
+    font-size: 1.4em;
+}
+
+main {
+    width: 100%;
+    height: 40vh;
+    padding-top: 200px;
+}
+
+main .teste {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+}
+
+main .btn_começar {
+    cursor: pointer;
+    font-size: 1em;
+    padding: 4px 20px;
+}
+
+main .depois {
+    display: none;
+}
+
+main .btns_teste {
+    width: 270px;
+    display: flex;
+    gap: 10px;
+}
+
+.depois p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: rgb(58, 58, 58);
+}
+
+.depois button {
+    cursor: pointer;
+    width: 220px;
+    height: 26px;
+}
+
+.fin {
+    background-color: var(--cor4);
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    margin-top: 30px;
+    width: 90px !important;
+    border-radius: 15px;
+}
+
+.fin:hover {
+    background-color: #13255a;
+}
+
+
+footer {
+    top: calc(91vh + 1px);
+    position: fixed;
+    right: 0px;
+    width: 100%;
+    height: 90px;
+    padding-top: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
+}
+
+footer .menu {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+footer .divs_menu {
+    cursor: pointer;
+}
+
+footer .meio  {
+    border-left: 1px solid black;
+}
+
+footer .divs_menu:hover {
+    color: var(--cor3);
+}
+
+
+footer .in {
+    color: var(--cor3);
+}
+
+
+footer  .icon {
+    vertical-align: middle;
+}
